@@ -1,0 +1,7 @@
+~ start
+Other Cat: ...
+Other Cat: [[I'm working be quiet! |Why arn't you working too?|What should I make for dinner... Huh ? what are you doing here? I'm busy.]]
+
+Cat: [[Sure...|he must be doing something important?|I just wanted some campany, how rude.]]
+
+=> END

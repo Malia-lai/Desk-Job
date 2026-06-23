@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cv0qcbp05nwfd"
+path="res://.godot/imported/panel_4.dialogue-1d6fab9288cd843e171cae6d9ee87771.tres"
+
+[deps]
+
+source_file="res://dialog/cinematic/panel_4.dialogue"
+dest_files=["res://.godot/imported/panel_4.dialogue-1d6fab9288cd843e171cae6d9ee87771.tres"]
+
+[params]
+
+defaults=true

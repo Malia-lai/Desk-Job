@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://clyssvby7qwpc"
+path="res://.godot/imported/first_day_home.dialogue-b0fa30d6a66c6d8122db0b1e973f1abf.tres"
+
+[deps]
+
+source_file="res://dialog/first_day_home.dialogue"
+dest_files=["res://.godot/imported/first_day_home.dialogue-b0fa30d6a66c6d8122db0b1e973f1abf.tres"]
+
+[params]
+
+defaults=true

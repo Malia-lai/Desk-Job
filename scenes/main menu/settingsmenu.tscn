@@ -1,0 +1,165 @@
+[gd_scene format=3 uid="uid://dxeo2xgxuo3vo"]
+
+[ext_resource type="Texture2D" uid="uid://bqpssp8hhafhq" path="res://scenes/office/ui/basic ui sprite.png" id="1_74pa4"]
+[ext_resource type="FontFile" uid="uid://cbl6it5ukjd8c" path="res://assets/UI/fonts/pixelFont-7-8x14-sproutLands.ttf" id="2_u82r0"]
+[ext_resource type="Texture2D" uid="uid://pscmgiskgwpw" path="res://assets/new asset/icon.png" id="3_7nw3k"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6x6b3"]
+texture = ExtResource("1_74pa4")
+region_rect = Rect2(837, 100, 22, 24)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uet2w"]
+texture = ExtResource("1_74pa4")
+region_rect = Rect2(869, 102, 22, 22)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p70yi"]
+texture = ExtResource("1_74pa4")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+region_rect = Rect2(277, 166, 38, 4)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5ffsd"]
+texture = ExtResource("1_74pa4")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+expand_margin_left = 5.0
+expand_margin_top = 11.0
+expand_margin_right = 7.0
+expand_margin_bottom = 7.0
+region_rect = Rect2(277, 133, 7, 18)
+
+[node name="settingsmenu" type="MarginContainer" unique_id=731087101]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=893631531]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="VBoxContainer" unique_id=1599826950]
+custom_minimum_size = Vector2(500, 300)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_74pa4")
+region_rect = Rect2(741, 38, 22, 22)
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+
+[node name="title" type="MarginContainer" parent="." unique_id=2027051385]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 20
+
+[node name="titre" type="VBoxContainer" parent="title" unique_id=1163533441]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="VBoxContainer" type="HBoxContainer" parent="title/titre" unique_id=1119459241]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Title" type="Label" parent="title/titre/VBoxContainer" unique_id=238773475]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_u82r0")
+theme_override_font_sizes/font_size = 35
+text = "Settings  :"
+
+[node name="exitbuton" type="VBoxContainer" parent="." unique_id=712364003]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="exitbuton" unique_id=1516529586]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_constants/margin_top = -11
+theme_override_constants/margin_right = -10
+
+[node name="exit" type="Button" parent="exitbuton/MarginContainer" unique_id=1019148968]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_6x6b3")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_uet2w")
+theme_override_styles/hover = SubResource("StyleBoxTexture_uet2w")
+
+[node name="bar" type="HBoxContainer" parent="." unique_id=2062357725]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="marginbar" type="MarginContainer" parent="bar" unique_id=1606014214]
+layout_mode = 2
+theme_override_constants/margin_top = 38
+
+[node name="VBoxContainer" type="VBoxContainer" parent="bar/marginbar" unique_id=446909652]
+layout_mode = 2
+theme_override_constants/separation = 32
+
+[node name="HBoxContainer" type="HBoxContainer" parent="bar/marginbar/VBoxContainer" unique_id=1586434973]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/separation = 40
+
+[node name="volume" type="HScrollBar" parent="bar/marginbar/VBoxContainer/HBoxContainer" unique_id=1338989320]
+custom_minimum_size = Vector2(300, 15)
+layout_mode = 2
+theme_override_styles/scroll = SubResource("StyleBoxTexture_p70yi")
+theme_override_styles/scroll_focus = SubResource("StyleBoxTexture_p70yi")
+theme_override_styles/grabber = SubResource("StyleBoxTexture_5ffsd")
+theme_override_styles/grabber_highlight = SubResource("StyleBoxTexture_5ffsd")
+theme_override_styles/grabber_pressed = SubResource("StyleBoxTexture_5ffsd")
+
+[node name="aligner" type="VBoxContainer" parent="bar/marginbar/VBoxContainer/HBoxContainer" unique_id=860851632]
+layout_mode = 2
+theme_override_constants/separation = -14
+
+[node name="Control" type="Control" parent="bar/marginbar/VBoxContainer/HBoxContainer/aligner" unique_id=2020459005]
+layout_mode = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="bar/marginbar/VBoxContainer/HBoxContainer/aligner" unique_id=2128783530]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("3_7nw3k")
+region_rect = Rect2(864, 127, 662, 681)
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="bar/marginbar/VBoxContainer" unique_id=1255746475]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="brightness" type="HScrollBar" parent="bar/marginbar/VBoxContainer/HBoxContainer2" unique_id=1110089542]
+custom_minimum_size = Vector2(300, 15)
+layout_mode = 2
+theme_override_styles/scroll = SubResource("StyleBoxTexture_p70yi")
+theme_override_styles/scroll_focus = SubResource("StyleBoxTexture_p70yi")
+theme_override_styles/grabber = SubResource("StyleBoxTexture_5ffsd")
+theme_override_styles/grabber_highlight = SubResource("StyleBoxTexture_5ffsd")
+theme_override_styles/grabber_pressed = SubResource("StyleBoxTexture_5ffsd")
+
+[node name="aligner" type="VBoxContainer" parent="bar/marginbar/VBoxContainer/HBoxContainer2" unique_id=1715725805]
+layout_mode = 2
+theme_override_constants/separation = -14
+
+[node name="Control" type="Control" parent="bar/marginbar/VBoxContainer/HBoxContainer2/aligner" unique_id=927685986]
+layout_mode = 2
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="bar/marginbar/VBoxContainer/HBoxContainer2/aligner" unique_id=1369631462]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture = ExtResource("3_7nw3k")
+region_rect = Rect2(88, 128, 664, 682)

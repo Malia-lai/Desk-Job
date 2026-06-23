@@ -1,0 +1,193 @@
+[gd_scene format=3 uid="uid://c76l8yux5ulj6"]
+
+[ext_resource type="Texture2D" uid="uid://bqpssp8hhafhq" path="res://scenes/office/ui/basic ui sprite.png" id="1_6j1ml"]
+[ext_resource type="Script" uid="uid://b8uutchg85m6m" path="res://script/sleep.gd" id="1_8afhk"]
+[ext_resource type="FontFile" uid="uid://cbl6it5ukjd8c" path="res://assets/UI/fonts/pixelFont-7-8x14-sproutLands.ttf" id="2_8afhk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bugco"]
+atlas = ExtResource("1_6j1ml")
+region = Rect2(59, 59, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i7u6t"]
+content_margin_left = 7.0
+content_margin_top = 7.0
+content_margin_right = 7.0
+content_margin_bottom = 7.0
+texture = ExtResource("1_6j1ml")
+region_rect = Rect2(818, 226, 12, 12)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5108e"]
+texture = ExtResource("1_6j1ml")
+region_rect = Rect2(674, 226, 12, 12)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1cdbo"]
+content_margin_left = 7.0
+content_margin_top = 7.0
+content_margin_right = 7.0
+content_margin_bottom = 7.0
+texture = ExtResource("1_6j1ml")
+region_rect = Rect2(802, 227, 13, 10)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vkmvc"]
+texture = ExtResource("1_6j1ml")
+region_rect = Rect2(658, 227, 13, 10)
+
+[sub_resource type="Animation" id="Animation_5acna"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PanelContainer:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PanelContainer:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_87vwk"]
+resource_name = "appear"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PanelContainer:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PanelContainer:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.01626249),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_bugco"]
+resource_name = "ui_vanish"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_s1i0i"]
+_data = {
+&"RESET": SubResource("Animation_5acna"),
+&"appear": SubResource("Animation_87vwk"),
+&"ui_vanish": SubResource("Animation_bugco")
+}
+
+[node name="Sleep" type="Control" unique_id=113307939]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8afhk")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=2105333325]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -179.09375
+offset_top = -78.25
+offset_right = 179.09375
+offset_bottom = 78.25
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="PanelContainer" unique_id=1982546875]
+layout_mode = 2
+texture = SubResource("AtlasTexture_bugco")
+region_rect = Rect2(0, 0, 26, 26)
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=360721694]
+layout_mode = 2
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_bottom = 23
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer" unique_id=1212597335]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_constants/separation = 34
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=239541494]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.76862746, 0.6039216, 0.42352942, 1)
+theme_override_fonts/font = ExtResource("2_8afhk")
+theme_override_font_sizes/font_size = 20
+text = "Do you want to sleep?"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1941621952]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 52
+
+[node name="resume" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1478997344]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("2_8afhk")
+theme_override_styles/normal = SubResource("StyleBoxTexture_i7u6t")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_i7u6t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_5108e")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_5108e")
+theme_override_styles/hover = SubResource("StyleBoxTexture_5108e")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_5108e")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_5108e")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_5108e")
+
+[node name="change scene" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1009329282]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_1cdbo")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_vkmvc")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_vkmvc")
+theme_override_styles/hover = SubResource("StyleBoxTexture_vkmvc")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_vkmvc")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_vkmvc")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_vkmvc")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=486112101]
+libraries/ = SubResource("AnimationLibrary_s1i0i")
+autoplay = &"appear"
+
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/change scene" to="." method="_on_change_scene_pressed"]

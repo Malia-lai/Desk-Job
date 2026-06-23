@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://b20w5wioot7kd"]
+
+[ext_resource type="Texture2D" uid="uid://captw60qswe4d" path="res://assets/Neko Office Asset Pack/Characters/cat-office-brown-front-idle.png" id="1_dlmty"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_neq0i"]
+atlas = ExtResource("1_dlmty")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jncid"]
+atlas = ExtResource("1_dlmty")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qnbj4"]
+atlas = ExtResource("1_dlmty")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r3bxh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_neq0i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jncid")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qnbj4")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3kg6o"]
+radius = 6.0827627
+
+[node name="boss" type="CharacterBody2D" unique_id=911886774]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=670767153]
+position = Vector2(0, -8)
+sprite_frames = SubResource("SpriteFrames_r3bxh")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.104910344
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=928637238]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_3kg6o")

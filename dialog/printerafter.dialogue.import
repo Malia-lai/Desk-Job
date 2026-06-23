@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://d1gyluo6nd8w0"
+path="res://.godot/imported/printerafter.dialogue-209cdfe5f7615cccb735b20a6ab77d51.tres"
+
+[deps]
+
+source_file="res://dialog/printerafter.dialogue"
+dest_files=["res://.godot/imported/printerafter.dialogue-209cdfe5f7615cccb735b20a6ab77d51.tres"]
+
+[params]
+
+defaults=true

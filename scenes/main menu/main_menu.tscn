@@ -1,0 +1,769 @@
+[gd_scene format=3 uid="uid://breq8svjbd4v0"]
+
+[ext_resource type="Script" uid="uid://bfd58nppr63ru" path="res://script/main menu/main_menu.gd" id="1_pri0a"]
+[ext_resource type="FontFile" uid="uid://cbl6it5ukjd8c" path="res://assets/UI/fonts/pixelFont-7-8x14-sproutLands.ttf" id="2_ajd3f"]
+[ext_resource type="Texture2D" uid="uid://jxmbbhgsauij" path="res://assets/new asset/font.webp" id="2_t60cf"]
+[ext_resource type="Texture2D" uid="uid://u2e422vlo56e" path="res://assets/UI/Sprite sheets/buttons/Small Square Buttons.png" id="3_t60cf"]
+[ext_resource type="Texture2D" uid="uid://pscmgiskgwpw" path="res://assets/new asset/icon.png" id="4_ajd3f"]
+[ext_resource type="Texture2D" uid="uid://b5v0dh2e7xhhq" path="res://assets/new asset/TITLE.png" id="4_vin4k"]
+[ext_resource type="Script" uid="uid://b4ksa0say3k7e" path="res://script/audio control/volume.gd" id="5_vin4k"]
+[ext_resource type="Texture2D" uid="uid://bqpssp8hhafhq" path="res://scenes/office/ui/basic ui sprite.png" id="6_ajd3f"]
+
+[sub_resource type="Animation" id="Animation_yw57d"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CONTAINER/NinePatchRect/v button:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0009999999),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CONTAINER/NinePatchRect/v button:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CONTAINER/title:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CONTAINER/title:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ColorRect:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ColorRect:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CONTAINER:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_yxpbc"]
+resource_name = "about"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CONTAINER/NinePatchRect/v button:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.19826643, 0.23333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CONTAINER/NinePatchRect/v button:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.23333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CONTAINER/title:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CONTAINER/title:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.26666668),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("aboutmenu:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.23432526),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("aboutmenu:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.23432526, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_t60cf"]
+resource_name = "play"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.027452275),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_staj0"]
+resource_name = "settings"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CONTAINER/NinePatchRect/v button:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.20436694, 0.26666668),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CONTAINER/NinePatchRect/v button:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.26666668),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CONTAINER/title:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CONTAINER/title:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.26666668),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("settingsmenu:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.23333333),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("settingsmenu:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.23333333, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CONTAINER:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.26917318),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_smifh"]
+_data = {
+&"RESET": SubResource("Animation_yw57d"),
+&"about": SubResource("Animation_yxpbc"),
+&"play": SubResource("Animation_t60cf"),
+&"settings": SubResource("Animation_staj0")
+}
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vin4k"]
+texture = ExtResource("6_ajd3f")
+region_rect = Rect2(837, 100, 22, 24)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kjcs7"]
+texture = ExtResource("6_ajd3f")
+region_rect = Rect2(869, 102, 22, 22)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6x6b3"]
+texture = ExtResource("6_ajd3f")
+region_rect = Rect2(837, 100, 22, 24)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uet2w"]
+texture = ExtResource("6_ajd3f")
+region_rect = Rect2(869, 102, 22, 22)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p70yi"]
+texture = ExtResource("6_ajd3f")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+region_rect = Rect2(277, 166, 38, 4)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5ffsd"]
+texture = ExtResource("6_ajd3f")
+texture_margin_left = 7.0
+texture_margin_top = 7.0
+texture_margin_right = 7.0
+texture_margin_bottom = 7.0
+expand_margin_left = 6.0
+expand_margin_top = 11.0
+expand_margin_right = 7.0
+expand_margin_bottom = 7.0
+region_rect = Rect2(273, 131, 15, 22)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8ln24"]
+texture = ExtResource("3_t60cf")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+expand_margin_left = 7.0
+expand_margin_top = 4.0
+expand_margin_right = 7.0
+expand_margin_bottom = 4.0
+region_rect = Rect2(0, 48, 16, 16)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rtw2f"]
+texture = ExtResource("3_t60cf")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+expand_margin_left = 7.0
+expand_margin_top = 4.0
+expand_margin_right = 7.0
+expand_margin_bottom = 4.0
+region_rect = Rect2(16, 50, 16, 14)
+
+[node name="main menu" type="Control" unique_id=1200550780 node_paths=PackedStringArray("animation")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pri0a")
+animation = NodePath("AnimationPlayer")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1368396739]
+libraries/ = SubResource("AnimationLibrary_smifh")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=816319447]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_t60cf")
+
+[node name="aboutmenu" type="MarginContainer" parent="." unique_id=1886156627]
+visible = false
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -174.0
+offset_right = 150.0
+offset_bottom = 226.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="aboutmenu" unique_id=1777827499]
+custom_minimum_size = Vector2(300, 400)
+layout_mode = 2
+texture = ExtResource("6_ajd3f")
+region_rect = Rect2(741, 38, 22, 22)
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+
+[node name="exitbutton" type="MarginContainer" parent="aboutmenu" unique_id=1916901192]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_constants/margin_top = -11
+theme_override_constants/margin_right = -10
+
+[node name="aboutexit" type="Button" parent="aboutmenu/exitbutton" unique_id=782321514]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_vin4k")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_kjcs7")
+theme_override_styles/hover = SubResource("StyleBoxTexture_kjcs7")
+
+[node name="title" type="MarginContainer" parent="aboutmenu" unique_id=1604847282]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_constants/margin_top = 20
+
+[node name="Label" type="Label" parent="aboutmenu/title" unique_id=1589336747]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_ajd3f")
+theme_override_font_sizes/font_size = 40
+text = "Note :"
+
+[node name="text" type="MarginContainer" parent="aboutmenu" unique_id=529532422]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_constants/margin_top = 88
+
+[node name="Label" type="Label" parent="aboutmenu/text" unique_id=1427502198]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_ajd3f")
+theme_override_font_sizes/font_size = 20
+text = "FIRST  GAME EVER MADE BY ME (MALIX) AND NYX HOW MADE THE FURNITURES AND PANELS SHOOT OUT TO HER BEAUTIFUL ART.
+
+w-> FRONT
+s -> BACK
+a -> LEFT
+d-> RIGHT
+e -> Interact
+
+have fun!"
+autowrap_mode = 2
+
+[node name="settingsmenu" type="MarginContainer" parent="." unique_id=731087101]
+visible = false
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -150.0
+offset_right = 250.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="settingsmenu" unique_id=893631531]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="settingsmenu/VBoxContainer" unique_id=1599826950]
+custom_minimum_size = Vector2(500, 300)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("6_ajd3f")
+region_rect = Rect2(741, 38, 22, 22)
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+
+[node name="title" type="MarginContainer" parent="settingsmenu" unique_id=2027051385]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 20
+
+[node name="titre" type="VBoxContainer" parent="settingsmenu/title" unique_id=1163533441]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="VBoxContainer" type="HBoxContainer" parent="settingsmenu/title/titre" unique_id=1119459241]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Title" type="Label" parent="settingsmenu/title/titre/VBoxContainer" unique_id=238773475]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ajd3f")
+theme_override_font_sizes/font_size = 35
+text = "Settings  :"
+
+[node name="exitbuton" type="VBoxContainer" parent="settingsmenu" unique_id=712364003]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="settingsmenu/exitbuton" unique_id=1516529586]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_constants/margin_top = -11
+theme_override_constants/margin_right = -10
+
+[node name="settingsexit" type="Button" parent="settingsmenu/exitbuton/MarginContainer" unique_id=1019148968]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_6x6b3")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_uet2w")
+theme_override_styles/hover = SubResource("StyleBoxTexture_uet2w")
+
+[node name="bar" type="HBoxContainer" parent="settingsmenu" unique_id=2062357725]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="marginbar" type="MarginContainer" parent="settingsmenu/bar" unique_id=1606014214]
+layout_mode = 2
+theme_override_constants/margin_top = 38
+
+[node name="VBoxContainer" type="VBoxContainer" parent="settingsmenu/bar/marginbar" unique_id=446909652]
+layout_mode = 2
+theme_override_constants/separation = 32
+
+[node name="HBoxContainer" type="HBoxContainer" parent="settingsmenu/bar/marginbar/VBoxContainer" unique_id=1586434973]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/separation = 40
+
+[node name="volume" type="HScrollBar" parent="settingsmenu/bar/marginbar/VBoxContainer/HBoxContainer" unique_id=1338989320]
+custom_minimum_size = Vector2(300, 15)
+layout_mode = 2
+theme_override_styles/scroll = SubResource("StyleBoxTexture_p70yi")
+theme_override_styles/scroll_focus = SubResource("StyleBoxTexture_p70yi")
+theme_override_styles/grabber = SubResource("StyleBoxTexture_5ffsd")
+theme_override_styles/grabber_highlight = SubResource("StyleBoxTexture_5ffsd")
+theme_override_styles/grabber_pressed = SubResource("StyleBoxTexture_5ffsd")
+theme_override_constants/padding_top = -40
+theme_override_constants/padding_bottom = -40
+max_value = 1.0
+step = 0.01
+value = 0.5
+script = ExtResource("5_vin4k")
+audio_bus_name = "music"
+
+[node name="aligner" type="VBoxContainer" parent="settingsmenu/bar/marginbar/VBoxContainer/HBoxContainer" unique_id=860851632]
+layout_mode = 2
+theme_override_constants/separation = -14
+
+[node name="Control" type="Control" parent="settingsmenu/bar/marginbar/VBoxContainer/HBoxContainer/aligner" unique_id=2020459005]
+layout_mode = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="settingsmenu/bar/marginbar/VBoxContainer/HBoxContainer/aligner" unique_id=2128783530]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("4_ajd3f")
+region_rect = Rect2(864, 127, 662, 681)
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="settingsmenu/bar/marginbar/VBoxContainer" unique_id=1255746475]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="brightness" type="HScrollBar" parent="settingsmenu/bar/marginbar/VBoxContainer/HBoxContainer2" unique_id=1110089542]
+custom_minimum_size = Vector2(300, 15)
+layout_mode = 2
+theme_override_styles/scroll = SubResource("StyleBoxTexture_p70yi")
+theme_override_styles/scroll_focus = SubResource("StyleBoxTexture_p70yi")
+theme_override_styles/grabber = SubResource("StyleBoxTexture_5ffsd")
+theme_override_styles/grabber_highlight = SubResource("StyleBoxTexture_5ffsd")
+theme_override_styles/grabber_pressed = SubResource("StyleBoxTexture_5ffsd")
+value = 100.0
+
+[node name="aligner" type="VBoxContainer" parent="settingsmenu/bar/marginbar/VBoxContainer/HBoxContainer2" unique_id=1715725805]
+layout_mode = 2
+theme_override_constants/separation = -14
+
+[node name="Control" type="Control" parent="settingsmenu/bar/marginbar/VBoxContainer/HBoxContainer2/aligner" unique_id=927685986]
+layout_mode = 2
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="settingsmenu/bar/marginbar/VBoxContainer/HBoxContainer2/aligner" unique_id=1369631462]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture = ExtResource("4_ajd3f")
+region_rect = Rect2(88, 128, 664, 682)
+
+[node name="CONTAINER" type="Control" parent="." unique_id=1682876733]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -235.0
+offset_top = -114.0
+offset_right = 235.0
+offset_bottom = 114.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CONTAINER" unique_id=1504722415]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -330.0
+offset_top = -57.0
+offset_right = 140.0
+offset_bottom = 171.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.4, 1.44)
+region_rect = Rect2(139, 12, 106, 122)
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+
+[node name="v button" type="VBoxContainer" parent="CONTAINER/NinePatchRect" unique_id=1724724882]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -53.0
+offset_top = -50.0
+offset_right = 26.0
+offset_bottom = 41.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.36, 1.3199999)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 14
+
+[node name="play" type="Button" parent="CONTAINER/NinePatchRect/v button" unique_id=294720858]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6241593, 0.49053204, 0.3010758, 1)
+theme_override_colors/font_focus_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/font_pressed_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/font_hover_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/icon_normal_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/icon_focus_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/icon_pressed_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/icon_hover_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_fonts/font = ExtResource("2_ajd3f")
+theme_override_styles/normal = SubResource("StyleBoxTexture_8ln24")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_8ln24")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_rtw2f")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_rtw2f")
+theme_override_styles/hover = SubResource("StyleBoxTexture_rtw2f")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_rtw2f")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_rtw2f")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_rtw2f")
+text = "Play"
+
+[node name="settings" type="Button" parent="CONTAINER/NinePatchRect/v button" unique_id=424885824]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.62352943, 0.49019608, 0.3019608, 1)
+theme_override_colors/font_focus_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/font_pressed_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/font_hover_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/icon_normal_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/icon_focus_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/icon_pressed_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/icon_hover_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_fonts/font = ExtResource("2_ajd3f")
+theme_override_styles/normal = SubResource("StyleBoxTexture_8ln24")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_8ln24")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_rtw2f")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_rtw2f")
+theme_override_styles/hover = SubResource("StyleBoxTexture_rtw2f")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_rtw2f")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_rtw2f")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_rtw2f")
+text = "SettIngs"
+
+[node name="about" type="Button" parent="CONTAINER/NinePatchRect/v button" unique_id=464446340]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.62352943, 0.49019608, 0.3019608, 1)
+theme_override_colors/font_focus_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/font_pressed_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/font_hover_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/icon_normal_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/icon_focus_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/icon_pressed_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/icon_hover_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.72156864, 0.5764706, 0.37254903, 1)
+theme_override_fonts/font = ExtResource("2_ajd3f")
+theme_override_styles/normal = SubResource("StyleBoxTexture_8ln24")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_8ln24")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_rtw2f")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_rtw2f")
+theme_override_styles/hover = SubResource("StyleBoxTexture_rtw2f")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_rtw2f")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_rtw2f")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_rtw2f")
+text = "about
+"
+
+[node name="title" type="NinePatchRect" parent="CONTAINER" unique_id=1759632313]
+custom_minimum_size = Vector2(250, 200)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -139.0
+offset_top = -209.99998
+offset_right = 111.0
+offset_bottom = -9.999985
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.003496305
+texture = ExtResource("4_vin4k")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=240949377]
+visible = false
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[connection signal="pressed" from="aboutmenu/exitbutton/aboutexit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="aboutmenu/exitbutton/aboutexit" to="." method="_on_aboutexit_pressed"]
+[connection signal="pressed" from="settingsmenu/exitbuton/MarginContainer/settingsexit" to="." method="_on_settingsexit_pressed"]
+[connection signal="changed" from="settingsmenu/bar/marginbar/VBoxContainer/HBoxContainer/volume" to="settingsmenu/bar/marginbar/VBoxContainer/HBoxContainer/volume" method="_on_changed"]
+[connection signal="value_changed" from="settingsmenu/bar/marginbar/VBoxContainer/HBoxContainer/volume" to="settingsmenu/bar/marginbar/VBoxContainer/HBoxContainer/volume" method="_on_value_changed"]
+[connection signal="pressed" from="CONTAINER/NinePatchRect/v button/play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="CONTAINER/NinePatchRect/v button/settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="CONTAINER/NinePatchRect/v button/about" to="." method="_on_about_pressed"]

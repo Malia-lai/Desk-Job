@@ -1,0 +1,24 @@
+~ start
+Cat: That's my journal, I stopped writting in it a long time ago.
+
+- Page 1
+	Cat: "I got accepted to art school!! Everybody told me to choose a normal path, but I wanted to do what I like for once..."
+	Cat: It's blurry... There is not enough light for me to read what it says, I should probably try again tomorrow.
+	Cat: I better sleep for now...
+- Page 2
+	Cat : Ergh I'm tired, I should probably read that tomorrow. => END!
+- Page 3
+	Cat: Ergh I'm tired, I should probably read that tomorrow.
+- Day 1
+	Cat: I should write something.
+	Cat: People always tell you to follow your dreams, but nobody tells you what to do when your dreams don't pay for groceries.
+	Cat: So I got a stable job.
+	Cat: Eight hours a day.
+	Cat: Five days a week.
+	Cat: Sometimes I look at my old art certificates hanging on the wall and wonder what happened to that version of me.
+	Cat: Today I "accidentally" broke the office printer.
+	Cat: Everyone laughed.
+	Cat: It was the most alive I've felt at work in months.
+- Exit => END
+
+=> END

@@ -1,0 +1,131 @@
+[gd_scene format=3 uid="uid://btloqf3o2lpqy"]
+
+[ext_resource type="Theme" uid="uid://c223hxbq1xb3u" path="res://scenes/office/ui/game_ui_theme.tres" id="1_v6iln"]
+[ext_resource type="Script" uid="uid://dp00fybnkef6e" path="res://scenes/office/ui/day_and_night_label.gd" id="2_ihdtu"]
+[ext_resource type="Texture2D" uid="uid://bqpssp8hhafhq" path="res://scenes/office/ui/basic ui sprite.png" id="2_vb5x4"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vb5x4"]
+texture = ExtResource("2_vb5x4")
+region_rect = Rect2(59, 59, 26, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vb5x4"]
+atlas = ExtResource("2_vb5x4")
+region = Rect2(261, 2, 7, 12)
+
+[node name="DayAndNightPanel" type="Control" unique_id=746190566]
+custom_minimum_size = Vector2(1, 1)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_v6iln")
+script = ExtResource("2_ihdtu")
+
+[node name="DayPanel" type="PanelContainer" parent="." unique_id=25987747]
+custom_minimum_size = Vector2(1, 1)
+layout_mode = 0
+offset_right = 47.0
+offset_bottom = 24.0
+theme_type_variation = &"DayAndNightCounterPanel"
+
+[node name="MarginContainer2" type="MarginContainer" parent="DayPanel" unique_id=1108332846]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 3
+
+[node name="DayLabel" type="Label" parent="DayPanel/MarginContainer2" unique_id=353103400]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_type_variation = &"DayAndNightLabel"
+text = "Day 0"
+
+[node name="TimePanel" type="PanelContainer" parent="." unique_id=490771663]
+layout_mode = 0
+offset_top = 26.0
+offset_right = 55.0
+offset_bottom = 50.0
+theme_type_variation = &"DayAndNightCounterPanel"
+
+[node name="MarginContainer" type="MarginContainer" parent="TimePanel" unique_id=2077104090]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 3
+
+[node name="TimeLabel" type="Label" parent="TimePanel/MarginContainer" unique_id=2141008694]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_type_variation = &"DayAndNightLabel"
+text = "8:00"
+
+[node name="Control" type="Control" parent="." unique_id=1548599912]
+anchors_preset = 0
+offset_top = 51.0
+offset_right = 40.0
+offset_bottom = 90.99998
+
+[node name="NormalSpeed" type="Button" parent="Control" unique_id=503715642]
+layout_mode = 0
+offset_right = 25.0
+offset_bottom = 18.0
+theme_type_variation = &"DayAndNightButton"
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_vb5x4")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_vb5x4")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_vb5x4")
+theme_override_styles/hover = SubResource("StyleBoxTexture_vb5x4")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_vb5x4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_vb5x4")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_vb5x4")
+
+[node name="TextureRect" type="TextureRect" parent="Control/NormalSpeed" unique_id=561167662]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 2.8899994
+offset_right = 17.0
+offset_bottom = 14.889999
+texture = SubResource("AtlasTexture_vb5x4")
+
+[node name="FastSpeed" type="Button" parent="Control" unique_id=408404719]
+layout_mode = 0
+offset_left = 26.0
+offset_top = -0.11000061
+offset_right = 51.0
+offset_bottom = 17.89
+theme_type_variation = &"DayAndNightButton"
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_vb5x4")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_vb5x4")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_vb5x4")
+theme_override_styles/hover = SubResource("StyleBoxTexture_vb5x4")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_vb5x4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_vb5x4")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_vb5x4")
+
+[node name="TextureRect" type="TextureRect" parent="Control/FastSpeed" unique_id=354288148]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 3.0
+offset_right = 19.0
+offset_bottom = 15.0
+texture = SubResource("AtlasTexture_vb5x4")
+
+[node name="TextureRect2" type="TextureRect" parent="Control/FastSpeed" unique_id=1937190568]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 3.0
+offset_right = 14.0
+offset_bottom = 15.0
+texture = SubResource("AtlasTexture_vb5x4")
+
+[connection signal="pressed" from="Control/NormalSpeed" to="." method="_on_normal_speed_pressed"]
+[connection signal="pressed" from="Control/FastSpeed" to="." method="_on_fast_speed_pressed"]

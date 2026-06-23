@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cgqm50spwe5w4"
+path="res://.godot/imported/second_day_home.dialogue-8762e17b1e3118eaf3dacafb4e72772f.tres"
+
+[deps]
+
+source_file="res://dialog/second_day_home.dialogue"
+dest_files=["res://.godot/imported/second_day_home.dialogue-8762e17b1e3118eaf3dacafb4e72772f.tres"]
+
+[params]
+
+defaults=true

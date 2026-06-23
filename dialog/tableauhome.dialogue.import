@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://beuax150mqytl"
+path="res://.godot/imported/tableauhome.dialogue-03c96fbdb5a6752b66a06ab184633e4c.tres"
+
+[deps]
+
+source_file="res://dialog/tableauhome.dialogue"
+dest_files=["res://.godot/imported/tableauhome.dialogue-03c96fbdb5a6752b66a06ab184633e4c.tres"]
+
+[params]
+
+defaults=true

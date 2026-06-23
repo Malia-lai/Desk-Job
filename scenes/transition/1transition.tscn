@@ -1,0 +1,185 @@
+[gd_scene format=3 uid="uid://elon3jt13rfw"]
+
+[ext_resource type="FontFile" uid="uid://cbl6it5ukjd8c" path="res://assets/UI/fonts/pixelFont-7-8x14-sproutLands.ttf" id="1_70iu4"]
+[ext_resource type="PackedScene" uid="uid://btloqf3o2lpqy" path="res://scenes/office/ui/day_and_night_label.tscn" id="2_1l8yw"]
+
+[sub_resource type="Animation" id="Animation_70iu4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0.2784314)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("DayAndNightPanel:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("DayAndNightPanel:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_1l8yw"]
+resource_name = "transition"
+length = 6.3333335
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1.5, 4.133333, 5.866667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect:color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.96666664, 2.7333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0.09019608), Color(0, 0, 0, 0.5254902), Color(0, 0, 0, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ColorRect:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 6.3333335),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("DayAndNightPanel:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("DayAndNightPanel:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1na0n"]
+_data = {
+&"RESET": SubResource("Animation_70iu4"),
+&"transition": SubResource("Animation_1l8yw")
+}
+
+[node name="1Transition" type="Control" unique_id=1380372363 groups=["transition"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=484165946]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 0.2784314)
+
+[node name="Label" type="Label" parent="." unique_id=853757179]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 0
+offset_left = 326.0
+offset_top = 301.5
+offset_right = 826.0
+offset_bottom = 346.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_70iu4")
+theme_override_font_sizes/font_size = 26
+text = "Another day of work... Do I really love what I'm doing anyways...?"
+autowrap_mode = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=329457092]
+libraries/ = SubResource("AnimationLibrary_1na0n")
+
+[node name="DayAndNightPanel" parent="." unique_id=746190566 instance=ExtResource("2_1l8yw")]
+layout_mode = 1
+offset_left = 868.0
+offset_top = 115.0
+offset_right = 869.0
+offset_bottom = 116.0
+scale = Vector2(2, 2)
+
+[node name="DayAndNightPanel2" parent="." unique_id=1462001281 instance=ExtResource("2_1l8yw")]
+layout_mode = 1
+offset_left = 868.0
+offset_top = 115.0
+offset_right = 869.0
+offset_bottom = 116.0
+scale = Vector2(2, 2)

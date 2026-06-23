@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cgd1dtuguceeb"
+path="res://.godot/imported/panel_2.dialogue-7c99ccb1263df6ca18292a8c6927f1b1.tres"
+
+[deps]
+
+source_file="res://dialog/cinematic/panel_2.dialogue"
+dest_files=["res://.godot/imported/panel_2.dialogue-7c99ccb1263df6ca18292a8c6927f1b1.tres"]
+
+[params]
+
+defaults=true

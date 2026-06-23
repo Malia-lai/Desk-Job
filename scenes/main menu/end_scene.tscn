@@ -1,0 +1,260 @@
+[gd_scene format=4 uid="uid://by2gbrb1m4d24"]
+
+[ext_resource type="Script" uid="uid://bs4mo1kaufucj" path="res://script/end_scene.gd" id="1_76bka"]
+[ext_resource type="FontFile" uid="uid://cbl6it5ukjd8c" path="res://assets/UI/fonts/pixelFont-7-8x14-sproutLands.ttf" id="1_tdwt2"]
+[ext_resource type="Script" uid="uid://b0t6fehshjyu3" path="res://script/button_ending.gd" id="2_prylv"]
+[ext_resource type="Texture2D" uid="uid://b43sqo334faai" path="res://assets/new asset/mark1_32.png" id="3_1fq3a"]
+[ext_resource type="Texture2D" uid="uid://i5ciaab5jbrj" path="res://assets/new asset/mark2_32.png" id="4_76bka"]
+[ext_resource type="Texture2D" uid="uid://c8mbo6flaic1t" path="res://assets/new asset/mark_32.png" id="5_jxdoc"]
+
+[sub_resource type="Animation" id="Animation_tdwt2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Button:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Button:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_prylv"]
+resource_name = "enter"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.2666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label2:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1.6666666),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Label2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1.6333333, 2.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Button:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 4.366667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Button:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(4.4, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ColorRect:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eip7p"]
+_data = {
+&"RESET": SubResource("Animation_tdwt2"),
+&"enter": SubResource("Animation_prylv")
+}
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m6xdg"]
+texture = ExtResource("3_1fq3a")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hu7xg"]
+texture = ExtResource("4_76bka")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w7nm2"]
+texture = ExtResource("5_jxdoc")
+0:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_sr2gq"]
+sources/0 = SubResource("TileSetAtlasSource_m6xdg")
+sources/1 = SubResource("TileSetAtlasSource_hu7xg")
+sources/2 = SubResource("TileSetAtlasSource_w7nm2")
+
+[node name="End scene" type="Control" unique_id=150578672]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_76bka")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1916849324]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=701945790]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -327.0
+offset_top = -67.0
+offset_right = 338.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_tdwt2")
+theme_override_font_sizes/font_size = 26
+text = "Maybe the whole point wasn't to go throught the void"
+
+[node name="Label2" type="Label" parent="." unique_id=1275017911]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -327.0
+offset_top = -22.0
+offset_right = 338.0
+offset_bottom = 78.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_tdwt2")
+theme_override_font_sizes/font_size = 26
+text = "But to escape from it..."
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=626866280]
+libraries/ = SubResource("AnimationLibrary_eip7p")
+
+[node name="Button" type="Button" parent="." unique_id=1331386199]
+visible = false
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(70, 40)
+layout_mode = 0
+offset_left = 671.0
+offset_top = 396.0
+offset_right = 741.0
+offset_bottom = 436.0
+theme_override_colors/font_hover_color = Color(0.7316497, 0.72459704, 0.70543647, 1)
+theme_override_fonts/font = ExtResource("1_tdwt2")
+text = "Escape"
+script = ExtResource("2_prylv")
+
+[node name="Timer" type="Timer" parent="Button" unique_id=510151353]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=670308441]
+visible = false
+position = Vector2(-129, -423)
+scale = Vector2(2, 2)
+tile_map_data = PackedByteArray("AAALABwAAgAAAAAAAAALAB0AAgAAAAEAAAAMAB0AAgABAAEAAAAJABYAAQAAAAAAAAAJABcAAQAAAAEAAAAKABYAAQABAAAAAAAKABcAAQABAAEAAAALABoAAAAAAAAAAAALABsAAAAAAAEAAAAMABoAAAABAAAAAAAMABsAAAABAAEAAAAgABYAAAAAAAAAAAAgABcAAAAAAAEAAAAhABYAAAABAAAAAAAhABcAAAABAAEAAAAhABgAAgABAAEAADAiABkAAgAAAAAAADAiABgAAgAAAAEAADAaABIAAQAAAAAAAAAaABMAAQAAAAEAAAAbABIAAQABAAAAAAAbABMAAQABAAEAAAAbABgAAAAAAAAAAAAbABkAAAAAAAEAAAAcABgAAAABAAAAAAAcABkAAAABAAEAAAAJABEAAQAAAAAAAAAJABIAAQAAAAEAAAAKABEAAQABAAAAAAAKABIAAQABAAEAAAAIABIAAgAAAAAAAAAIABMAAgAAAAEAAAAJABMAAgABAAEAAAAaABoAAQAAAAAAAAAaABsAAQAAAAEAAAAbABoAAQABAAAAAAAbABsAAQABAAEAAAAiAA8AAQABAAAAADAiAA4AAQABAAEAADAjAA8AAQAAAAAAADAjAA4AAQAAAAEAADAiABAAAAAAAAAAAAAiABEAAAAAAAEAAAAjABAAAAABAAAAAAAjABEAAAABAAEAAAAfABMAAgABAAEAADAgABQAAgAAAAAAADAgABMAAgAAAAEAADARAA8AAQAAAAAAAAARABAAAQAAAAEAAAASAA8AAQABAAAAAAASABAAAQABAAEAAAATAA8AAAAAAAAAAAATABAAAAAAAAEAAAAUAA8AAAABAAAAAAAUABAAAAABAAEAAAASABEAAgAAAAAAAAASABIAAgAAAAEAAAATABIAAgABAAEAAAAVABcAAAAAAAAAAAAVABgAAAAAAAEAAAAWABcAAAABAAAAAAAWABgAAAABAAEAAAAUABgAAgAAAAAAAAAUABkAAgAAAAEAAAAVABkAAgABAAEAAAA=")
+tile_set = SubResource("TileSet_sr2gq")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

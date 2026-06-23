@@ -1,0 +1,36 @@
+[gd_resource type="Theme" format=3 uid="uid://c223hxbq1xb3u"]
+
+[ext_resource type="Texture2D" uid="uid://bqpssp8hhafhq" path="res://scenes/office/ui/basic ui sprite.png" id="1_68i34"]
+[ext_resource type="FontFile" uid="uid://cbl6it5ukjd8c" path="res://assets/UI/fonts/pixelFont-7-8x14-sproutLands.ttf" id="2_mtjyl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kmcn1"]
+atlas = ExtResource("1_68i34")
+region = Rect2(59, 107, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0v6ca"]
+texture = SubResource("AtlasTexture_kmcn1")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cqa1q"]
+atlas = ExtResource("1_68i34")
+region = Rect2(504, 131, 35, 18)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1hvfw"]
+texture = SubResource("AtlasTexture_cqa1q")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 1.0
+texture_margin_bottom = 2.0
+region_rect = Rect2(0, 0, 35, 18)
+
+[resource]
+DayAndNightButton/base_type = &"button"
+DayAndNightButton/styles/normal = SubResource("StyleBoxTexture_0v6ca")
+DayAndNightCounterPanel/base_type = &"panelcon"
+DayAndNightCounterPanel/styles/panel = SubResource("StyleBoxTexture_1hvfw")
+DayAndNightLabel/base_type = &"Label"
+DayAndNightLabel/font_sizes/font_size = 18
+DayAndNightLabel/fonts/font = ExtResource("2_mtjyl")

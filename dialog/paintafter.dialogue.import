@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://br0xawo5j1y67"
+path="res://.godot/imported/paintafter.dialogue-6447963a8433f76f2d20e1e84dc998f3.tres"
+
+[deps]
+
+source_file="res://dialog/paintafter.dialogue"
+dest_files=["res://.godot/imported/paintafter.dialogue-6447963a8433f76f2d20e1e84dc998f3.tres"]
+
+[params]
+
+defaults=true

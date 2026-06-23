@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://b3sqk1gfjqiew"]
+
+[ext_resource type="Texture2D" uid="uid://c2wcljjp8pgj4" path="res://assets/Neko Office Asset Pack/Characters/cat-office-brown-back-idle.png" id="1_b1dmv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6wknw"]
+atlas = ExtResource("1_b1dmv")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b7gi2"]
+atlas = ExtResource("1_b1dmv")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t0y4l"]
+atlas = ExtResource("1_b1dmv")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o4231"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6wknw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b7gi2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t0y4l")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="other npc lol" type="CharacterBody2D" unique_id=911886774]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1030151110]
+position = Vector2(0, -7)
+sprite_frames = SubResource("SpriteFrames_o4231")
+autoplay = "default"
+frame_progress = 0.46668327

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dtpejc4yae1p5"
+path="res://.godot/imported/certificate.dialogue-7cc011f80445cacc8497be5eb00051ff.tres"
+
+[deps]
+
+source_file="res://dialog/certificate.dialogue"
+dest_files=["res://.godot/imported/certificate.dialogue-7cc011f80445cacc8497be5eb00051ff.tres"]
+
+[params]
+
+defaults=true

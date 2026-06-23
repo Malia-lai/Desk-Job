@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bw7vw85ixc6n3"
+path="res://.godot/imported/reception_third.dialogue-7f7b88612f846842a5abd6fed328e2ed.tres"
+
+[deps]
+
+source_file="res://dialog/reception_third.dialogue"
+dest_files=["res://.godot/imported/reception_third.dialogue-7f7b88612f846842a5abd6fed328e2ed.tres"]
+
+[params]
+
+defaults=true

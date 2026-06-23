@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://b4olu0x52rpbp"
+path="res://.godot/imported/reception_first.dialogue-d41956face50bffcbfc7f25727fc0046.tres"
+
+[deps]
+
+source_file="res://dialog/reception_first.dialogue"
+dest_files=["res://.godot/imported/reception_first.dialogue-d41956face50bffcbfc7f25727fc0046.tres"]
+
+[params]
+
+defaults=true

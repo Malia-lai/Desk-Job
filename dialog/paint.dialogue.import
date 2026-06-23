@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cjgip0cpjlnkr"
+path="res://.godot/imported/paint.dialogue-070a65640b13b9bb5f3c11f08b4aab4b.tres"
+
+[deps]
+
+source_file="res://dialog/paint.dialogue"
+dest_files=["res://.godot/imported/paint.dialogue-070a65640b13b9bb5f3c11f08b4aab4b.tres"]
+
+[params]
+
+defaults=true

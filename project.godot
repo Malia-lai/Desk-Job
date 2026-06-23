@@ -1,0 +1,109 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="game jam"
+run/main_scene="uid://breq8svjbd4v0"
+config/features=PackedStringArray("4.6", "Mobile")
+config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="uid://b6jm7vo6xjq76"
+
+[autoload]
+
+DayAndNightCycleManager="*uid://bvp4byxiba76w"
+InteractionManager="*uid://d0vjyeombi0g4"
+Count="*uid://d31np3oeliwlo"
+DialogueManager="*uid://c3rodes2l3gxb"
+Music="*uid://cp8tpakiyohum"
+
+[editor]
+
+version_control/autoload_on_startup=true
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/godot_super-wakatime/plugin.cfg")
+
+[global_group]
+
+navigation_polygon_source_geometry_group=""
+Player=""
+interactible=""
+animation=""
+novel=""
+clothes=""
+npc=""
+npc2=""
+sink=""
+transition=""
+certificate=""
+coffee=""
+canva=""
+palette=""
+tableau=""
+paint=""
+computer=""
+printer=""
+reception=""
+
+[input]
+
+front={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":83,"key_label":0,"unicode":115,"location":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":83,"key_label":0,"unicode":115,"location":0,"echo":false,"script":null)
+]
+}
+back={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":87,"key_label":0,"unicode":122,"location":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":87,"key_label":0,"unicode":119,"location":0,"echo":false,"script":null)
+]
+}
+left={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":65,"key_label":0,"unicode":113,"location":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":65,"key_label":0,"unicode":97,"location":0,"echo":false,"script":null)
+]
+}
+right={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"key_label":0,"unicode":100,"location":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"key_label":0,"unicode":100,"location":0,"echo":false,"script":null)
+]
+}
+interact={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":69,"key_label":0,"unicode":101,"location":0,"echo":false,"script":null)
+]
+}
+
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://dialog/story.dialogue", "res://dialog/story2.dialogue", "res://dialog/clothes.dialogue", "res://dialog/tableau.dialogue", "res://dialog/discuss.dialogue", "res://dialog/sink.dialogue", "res://dialog/certificate.dialogue", "res://dialog/coffee.dialogue", "res://dialog/tableauhome.dialogue", "res://dialog/palette.dialogue", "res://dialog/canva.dialogue", "res://dialog/paint.dialogue", "res://dialog/paintafter.dialogue", "res://dialog/printer.dialogue", "res://dialog/computer.dialogue", "res://dialog/printerafter.dialogue", "res://dialog/computerafter.dialogue", "res://dialog/first_day.dialogue", "res://dialog/first_day_home.dialogue", "res://dialog/second_day.dialogue", "res://dialog/second_day_home.dialogue", "res://dialog/third_day.dialogue", "res://dialog/cinematic/panel_1.dialogue", "res://dialog/cinematic/panel_2.dialogue", "res://dialog/cinematic/panel_3.dialogue", "res://dialog/cinematic/panel_4.dialogue", "res://dialog/third_day_home.dialogue", "res://dialog/reception_first.dialogue", "res://dialog/reception_second.dialogue", "res://dialog/reception_third.dialogue", "res://dialog/story3.dialogue")
+
+[layer_names]
+
+2d_navigation/layer_1="npc "
+2d_physics/layer_2="player"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="mobile"

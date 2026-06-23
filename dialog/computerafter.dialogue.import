@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://6d3t733ploa8"
+path="res://.godot/imported/computerafter.dialogue-e1b872147f2fc026cae3fea56d5c858d.tres"
+
+[deps]
+
+source_file="res://dialog/computerafter.dialogue"
+dest_files=["res://.godot/imported/computerafter.dialogue-e1b872147f2fc026cae3fea56d5c858d.tres"]
+
+[params]
+
+defaults=true

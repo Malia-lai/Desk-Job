@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://j4iith6jhyvr"
+path="res://.godot/imported/sink.dialogue-8da921ea1a2aa686df443c51a98c57f7.tres"
+
+[deps]
+
+source_file="res://dialog/sink.dialogue"
+dest_files=["res://.godot/imported/sink.dialogue-8da921ea1a2aa686df443c51a98c57f7.tres"]
+
+[params]
+
+defaults=true

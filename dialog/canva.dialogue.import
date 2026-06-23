@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://delsgoaplk0kq"
+path="res://.godot/imported/canva.dialogue-0b1e08d71a9426c1c3fc2042e810acfc.tres"
+
+[deps]
+
+source_file="res://dialog/canva.dialogue"
+dest_files=["res://.godot/imported/canva.dialogue-0b1e08d71a9426c1c3fc2042e810acfc.tres"]
+
+[params]
+
+defaults=true

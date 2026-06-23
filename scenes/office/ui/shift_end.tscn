@@ -1,0 +1,188 @@
+[gd_scene format=3 uid="uid://c06dp28581iki"]
+
+[ext_resource type="Script" uid="uid://couf1i7n7xh20" path="res://script/shift_end.gd" id="1_5acna"]
+[ext_resource type="Texture2D" uid="uid://bqpssp8hhafhq" path="res://scenes/office/ui/basic ui sprite.png" id="1_j5vg0"]
+[ext_resource type="FontFile" uid="uid://cbl6it5ukjd8c" path="res://assets/UI/fonts/pixelFont-7-8x14-sproutLands.ttf" id="2_5acna"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_87vwk"]
+atlas = ExtResource("1_j5vg0")
+region = Rect2(59, 59, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_telrx"]
+content_margin_left = 7.0
+content_margin_top = 7.0
+content_margin_right = 7.0
+content_margin_bottom = 7.0
+texture = ExtResource("1_j5vg0")
+region_rect = Rect2(818, 226, 12, 12)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j5vg0"]
+texture = ExtResource("1_j5vg0")
+region_rect = Rect2(674, 226, 12, 12)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pdk4w"]
+content_margin_left = 7.0
+content_margin_top = 7.0
+content_margin_right = 7.0
+content_margin_bottom = 7.0
+texture = ExtResource("1_j5vg0")
+region_rect = Rect2(802, 227, 13, 10)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5acna"]
+texture = ExtResource("1_j5vg0")
+region_rect = Rect2(658, 227, 13, 10)
+
+[sub_resource type="Animation" id="Animation_5acna"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PanelContainer:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PanelContainer:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_87vwk"]
+resource_name = "appear"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PanelContainer:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PanelContainer:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.01626249),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_telrx"]
+_data = {
+&"RESET": SubResource("Animation_5acna"),
+&"appear": SubResource("Animation_87vwk")
+}
+
+[node name="ShiftEnd" type="Control" unique_id=1733533205]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5acna")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1104801443]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -179.09375
+offset_top = -78.25
+offset_right = 179.09375
+offset_bottom = 78.25
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="PanelContainer" unique_id=1078779889]
+layout_mode = 2
+texture = SubResource("AtlasTexture_87vwk")
+region_rect = Rect2(0, 0, 26, 26)
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=1377849574]
+layout_mode = 2
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_bottom = 23
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer" unique_id=1100071142]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_constants/separation = 34
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1258582244]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.76862746, 0.6039216, 0.42352942, 1)
+theme_override_fonts/font = ExtResource("2_5acna")
+theme_override_font_sizes/font_size = 20
+text = "It's gettIng late...Do you want to go back home?"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=231965956]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 52
+
+[node name="resume" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1614162769]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("2_5acna")
+theme_override_styles/normal = SubResource("StyleBoxTexture_telrx")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_telrx")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_j5vg0")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_j5vg0")
+theme_override_styles/hover = SubResource("StyleBoxTexture_j5vg0")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_j5vg0")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_j5vg0")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_j5vg0")
+
+[node name="change scene" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1670647266]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_pdk4w")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_5acna")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_5acna")
+theme_override_styles/hover = SubResource("StyleBoxTexture_5acna")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_5acna")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_5acna")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_5acna")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=51172940]
+libraries/ = SubResource("AnimationLibrary_telrx")
+autoplay = &"appear"
+
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/change scene" to="." method="_on_change_scene_pressed"]

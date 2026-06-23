@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dadjlavivi1sq"
+path="res://.godot/imported/first_day.dialogue-8702db69cd61024bd73402492fcfa9f7.tres"
+
+[deps]
+
+source_file="res://dialog/first_day.dialogue"
+dest_files=["res://.godot/imported/first_day.dialogue-8702db69cd61024bd73402492fcfa9f7.tres"]
+
+[params]
+
+defaults=true
