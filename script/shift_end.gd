@@ -28,8 +28,8 @@ func resume():
 func trigger():
 	if not is_dialogue_running and DayAndNightCycleManager.hour >= 17 and triggered == false and not is_waiting_rentry:
 		is_waiting_rentry = true #block re entering 60 times a sec and finishes reading
-#		timer.start() #timer of 1sec
-#		await timer.timeout
+		pause()
+	if not is_dialogue_running and DayAndNightCycleManager.hour >= 19 :
 		pause()
 
 func _on_change_scene_pressed() -> void:
@@ -38,6 +38,7 @@ func _on_change_scene_pressed() -> void:
 	
 func _on_resume_pressed() -> void:
 	resume()
+	
 
 func _process(_delta: float) -> void:
 	trigger()

@@ -27,6 +27,14 @@ Count="*uid://d31np3oeliwlo"
 DialogueManager="*uid://c3rodes2l3gxb"
 Music="*uid://cp8tpakiyohum"
 
+[dialogue_manager]
+
+runtime/balloon_path="uid://cf4uyj8cbb55n"
+
+[display]
+
+window/stretch/mode="canvas_items"
+
 [editor]
 
 version_control/autoload_on_startup=true

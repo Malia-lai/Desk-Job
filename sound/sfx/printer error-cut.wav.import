@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dughmyh5lfva2"
+path="res://.godot/imported/printer error-cut.wav-b5a5a451573332e8e6c9cd912410a2c0.sample"
+
+[deps]
+
+source_file="res://sound/sfx/printer error-cut.wav"
+dest_files=["res://.godot/imported/printer error-cut.wav-b5a5a451573332e8e6c9cd912410a2c0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

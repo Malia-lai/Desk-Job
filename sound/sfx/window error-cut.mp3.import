@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://5x0lby3b8xuw"
+path="res://.godot/imported/window error-cut.mp3-6bd68d893604ec7e160dba95f2025cba.mp3str"
+
+[deps]
+
+source_file="res://sound/sfx/window error-cut.mp3"
+dest_files=["res://.godot/imported/window error-cut.mp3-6bd68d893604ec7e160dba95f2025cba.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

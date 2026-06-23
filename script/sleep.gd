@@ -47,37 +47,37 @@ func trigger():
 func novel_read():
 	if Count.day == 1:
 		if Input.is_action_pressed("interact"):
-			DialogueManager.show_example_dialogue_balloon(load("res://dialog/story.dialogue"), "start")
+			DialogueManager.show_dialogue_balloon(load("res://dialog/story.dialogue"), "start")
 	elif Count.day == 2:
 		if Input.is_action_pressed("interact"):
-			DialogueManager.show_example_dialogue_balloon(load("res://dialog/story2.dialogue"), "start")
+			DialogueManager.show_dialogue_balloon(load("res://dialog/story2.dialogue"), "start")
 	elif Count.day == 3:
 		if Input.is_action_pressed("interact"):
-			DialogueManager.show_example_dialogue_balloon(load("res://dialog/story3.dialogue"), "start")
+			DialogueManager.show_dialogue_balloon(load("res://dialog/story3.dialogue"), "start")
 		
 func clothes():
 	if Input.is_action_pressed("interact"):
-		DialogueManager.show_example_dialogue_balloon(load("res://dialog/clothes.dialogue"), "start")
+		DialogueManager.show_dialogue_balloon(load("res://dialog/clothes.dialogue"), "start")
 
 func coffee():
 	if Input.is_action_pressed("interact"):
-		DialogueManager.show_example_dialogue_balloon(load("res://dialog/coffee.dialogue"), "start")
+		DialogueManager.show_dialogue_balloon(load("res://dialog/coffee.dialogue"), "start")
 	
 func certificate():
 	if Input.is_action_pressed("interact"):
-		DialogueManager.show_example_dialogue_balloon(load("res://dialog/certificate.dialogue"), "start")
+		DialogueManager.show_dialogue_balloon(load("res://dialog/certificate.dialogue"), "start")
 		
 func canva():
 	if Input.is_action_pressed("interact"):
-		DialogueManager.show_example_dialogue_balloon(load("res://dialog/canva.dialogue"), "start")
+		DialogueManager.show_dialogue_balloon(load("res://dialog/canva.dialogue"), "start")
 	
 func tableau():
 	if Input.is_action_pressed("interact"):
-		DialogueManager.show_example_dialogue_balloon(load("res://dialog/tableauhome.dialogue"), "start")
+		DialogueManager.show_dialogue_balloon(load("res://dialog/tableauhome.dialogue"), "start")
 		
 func palette():
 	if Input.is_action_pressed("interact"):
-		DialogueManager.show_example_dialogue_balloon(load("res://dialog/palette.dialogue"), "start")
+		DialogueManager.show_dialogue_balloon(load("res://dialog/palette.dialogue"), "start")
 		
 		
 func change_scene():
@@ -129,14 +129,14 @@ func _process(_delta: float) -> void:
 		Count.is_entered = false
 		timer.start()
 		await timer.timeout
-		DialogueManager.show_example_dialogue_balloon(load("res://dialog/first_day_home.dialogue"), "start")
+		DialogueManager.show_dialogue_balloon(load("res://dialog/first_day_home.dialogue"), "start")
 	if Count.is_entered and Count.day == 2:
 		Count.is_entered = false
 		timer.start()
 		await timer.timeout
-		DialogueManager.show_example_dialogue_balloon(load("res://dialog/second_day_home.dialogue"), "start")
+		DialogueManager.show_dialogue_balloon(load("res://dialog/second_day_home.dialogue"), "start")
 	if Count.is_entered and Count.day == 3:
 		Count.is_entered = false
 		timer.start()
 		await timer.timeout
-		DialogueManager.show_example_dialogue_balloon(load("res://dialog/third_day_home.dialogue"), "start")
+		DialogueManager.show_dialogue_balloon(load("res://dialog/third_day_home.dialogue"), "start")

@@ -2683,10 +2683,10 @@ anchor_left = -0.326
 anchor_top = -0.22100002
 anchor_right = 0.674
 anchor_bottom = 0.77900004
-offset_left = 82.552
-offset_top = 40.208008
-offset_right = 82.552
-offset_bottom = 40.207977
+offset_left = 373.552
+offset_top = 145.20801
+offset_right = 373.552
+offset_bottom = 145.20798
 
 [node name="DayAndNightPanel" parent="UI" unique_id=746190566 instance=ExtResource("3_4jjk6")]
 visible = false

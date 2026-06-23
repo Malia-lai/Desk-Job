@@ -31,17 +31,17 @@ func _ready():
 	
 func prank(name):
 	if Input.is_action_pressed("interact"):
-		DialogueManager.show_example_dialogue_balloon(load("res://dialog/" + name + ".dialogue"), "start")
+		DialogueManager.show_dialogue_balloon(load("res://dialog/" + name + ".dialogue"), "start")
 		await DialogueManager.dialogue_ended
 		get("interaction_area_" + name).get_node("CollisionShape2D").disabled = true	
 		animation.play("transition_" + name)
 		await animation.animation_finished
-		DialogueManager.show_example_dialogue_balloon(load("res://dialog/" + name + "after.dialogue"), "start")
+		DialogueManager.show_dialogue_balloon(load("res://dialog/" + name + "after.dialogue"), "start")
 		
 
 func novel_read():
 	if Input.is_action_pressed("interact"):
-		DialogueManager.show_example_dialogue_balloon(load("res://dialog/tableau.dialogue"), "start")
+		DialogueManager.show_dialogue_balloon(load("res://dialog/tableau.dialogue"), "start")
 
 func npc():
 	if Input.is_action_pressed("interact"):
@@ -63,13 +63,13 @@ func computer():
 func reception():
 	if Count.day == 1:
 		if Input.is_action_pressed("interact"):
-			DialogueManager.show_example_dialogue_balloon(load("res://dialog/reception_first.dialogue"), "start")
+			DialogueManager.show_dialogue_balloon(load("res://dialog/reception_first.dialogue"), "start")
 	if Count.day == 2:
 		if Input.is_action_pressed("interact"):
-			DialogueManager.show_example_dialogue_balloon(load("res://dialog/reception_second.dialogue"), "start")
+			DialogueManager.show_dialogue_balloon(load("res://dialog/reception_second.dialogue"), "start")
 	if Count.day == 3:
 		if Input.is_action_pressed("interact"):
-			DialogueManager.show_example_dialogue_balloon(load("res://dialog/reception_third.dialogue"), "start")
+			DialogueManager.show_dialogue_balloon(load("res://dialog/reception_third.dialogue"), "start")
 		
 
 func _process(_delta: float) -> void:
@@ -79,7 +79,7 @@ func _process(_delta: float) -> void:
 		Count.is_entered = true
 		timer.start()
 		await timer.timeout
-		DialogueManager.show_example_dialogue_balloon(load("res://dialog/first_day.dialogue"), "start")
+		DialogueManager.show_dialogue_balloon(load("res://dialog/first_day.dialogue"), "start")
 		
 		
 	if not Count.is_entered and Count.day == 2 :
@@ -91,7 +91,7 @@ func _process(_delta: float) -> void:
 		new_printer.get_node("paper").visible = false
 		timer.start()
 		await timer.timeout
-		DialogueManager.show_example_dialogue_balloon(load("res://dialog/second_day.dialogue"), "start")
+		DialogueManager.show_dialogue_balloon(load("res://dialog/second_day.dialogue"), "start")
 
 	if not Count.is_entered and Count.day == 3 :
 
@@ -104,4 +104,4 @@ func _process(_delta: float) -> void:
 		Count.is_entered = true
 		timer.start()
 		await timer.timeout
-		DialogueManager.show_example_dialogue_balloon(load("res://dialog/third_day.dialogue"), "start")
+		DialogueManager.show_dialogue_balloon(load("res://dialog/third_day.dialogue"), "start")

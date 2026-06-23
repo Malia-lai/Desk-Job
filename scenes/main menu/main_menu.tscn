@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://b5v0dh2e7xhhq" path="res://assets/new asset/TITLE.png" id="4_vin4k"]
 [ext_resource type="Script" uid="uid://b4ksa0say3k7e" path="res://script/audio control/volume.gd" id="5_vin4k"]
 [ext_resource type="Texture2D" uid="uid://bqpssp8hhafhq" path="res://scenes/office/ui/basic ui sprite.png" id="6_ajd3f"]
+[ext_resource type="AudioStream" uid="uid://da6dlq7jy4lfo" path="res://sound/sfx/button click.wav" id="9_kjcs7"]
 
 [sub_resource type="Animation" id="Animation_yw57d"]
 length = 0.001
@@ -433,10 +434,11 @@ theme_override_font_sizes/font_size = 40
 text = "Note :"
 
 [node name="text" type="MarginContainer" parent="aboutmenu" unique_id=529532422]
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
-theme_override_constants/margin_top = 88
+theme_override_constants/margin_top = 70
 
 [node name="Label" type="Label" parent="aboutmenu/text" unique_id=1427502198]
 custom_minimum_size = Vector2(250, 0)
@@ -452,7 +454,10 @@ a -> LEFT
 d-> RIGHT
 e -> Interact
 
-have fun!"
+
+If you speed up the time in the officle, make sure to set it back to default when you get home.
+have fun!
+"
 autowrap_mode = 2
 
 [node name="settingsmenu" type="MarginContainer" parent="." unique_id=731087101]
@@ -758,6 +763,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
+
+[node name="button" type="AudioStreamPlayer" parent="." unique_id=975990863]
+stream = ExtResource("9_kjcs7")
 
 [connection signal="pressed" from="aboutmenu/exitbutton/aboutexit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="aboutmenu/exitbutton/aboutexit" to="." method="_on_aboutexit_pressed"]
