@@ -23,7 +23,7 @@ var is_playing: bool = true
 
 
 func _ready():
-	$AnimationPlayer.play("RESET")
+	transit.play("reset_state")
 	interaction_area.interact = Callable(self, "trigger")
 	interaction_area_novel.interact = Callable(self, "novel_read")
 	interaction_area_clothes.interact = Callable(self, "clothes")
@@ -32,6 +32,7 @@ func _ready():
 	interaction_area_canva.interact = Callable(self, "canva")
 	interaction_area_tableau.interact = Callable(self, "tableau")
 	interaction_area_palette.interact = Callable(self, "palette")
+
 	
 	
 	

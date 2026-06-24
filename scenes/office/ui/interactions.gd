@@ -45,11 +45,11 @@ func novel_read():
 
 func npc():
 	if Input.is_action_pressed("interact"):
-			DialogueManager.show_example_dialogue_balloon(load("res://dialog/discuss.dialogue"), "start")
+			DialogueManager.show_dialogue_balloon(load("res://dialog/discuss.dialogue"), "start")
 
 func sink():
 	if Input.is_action_pressed("interact"):
-			DialogueManager.show_example_dialogue_balloon(load("res://dialog/sink.dialogue"), "start")
+			DialogueManager.show_dialogue_balloon(load("res://dialog/sink.dialogue"), "start")
 
 func paint():
 	prank("paint")
