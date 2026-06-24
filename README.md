@@ -15,10 +15,7 @@
 
 <br />
 <h2>How to Play</h2>
-<p>Use <strong>WASD</strong> or the <strong>Arrow Keys</strong> to move around the office. Press <strong>E</strong> or <strong>Enter</strong> to interact with coworkers and objects. Talk to everyone around you — NPCs react to what you do. Follow the story through the diary entries as the character slowly confronts what he has been avoiding. The game is short and story-driven, so take your time reading.</p>
-<br />
-<h2>Goal</h2>
-<p>Navigate through the office, trigger pranks, and follow the story to its conclusion. There are no enemies or fail states — the challenge is emotional. Every choice you make reflects the character's inner world. Reach the ending and make your final decision. Maybe the whole point was never to go through the void, but to escape from it.</p>
+<p>Use <strong>WASD</strong> to move around the office. Press <strong>E</strong> to interact with coworkers and objects. Talk to everyone around you — NPCs react to what you do. Follow the story through the diary entries as the character slowly confronts what he has been avoiding. The game is short and story-driven, so take your time reading.</p>
 
 <br />
 <div align="center">
